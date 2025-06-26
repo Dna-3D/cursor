@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="logo-placeholder.png" alt="Logo" class="logo">
+      <button class="hamburger" id="hamburger-btn">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><button id="theme-toggle">🌙</button></li>
+        <li><a href="admin.html" class="admin-link">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Welcome to Modern E-Commerce</h1>
+      <p class="hero-sub">Discover the best products, curated for you.</p>
+    </section>
+    <section class="carousel-section">
+      <h2>Featured Products</h2>
+      <div class="carousel" id="carousel-featured"></div>
+    </section>
+    <section class="carousel-section">
+      <h2>Trending Now</h2>
+      <div class="carousel" id="carousel-trending"></div>
+    </section>
+    <section class="horizontal-scroll-section">
+      <h2>All Products</h2>
+      <div class="horizontal-scroll" id="horizontal-products"></div>
+    </section>
+  </main>
+  <footer class="modern-footer">
+    <!-- Modern footer will be rendered here -->
+  </footer>
+  <script src="firebase-app.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html> 

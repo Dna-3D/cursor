@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - Modern E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Panel</h1>
+    <a href="index.html" class="admin-link">Back to Shop</a>
+  </header>
+  <main>
+    <section id="admin-login-section">
+      <h2>Admin Login</h2>
+      <form id="admin-login-form">
+        <input type="password" id="admin-password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+    </section>
+    <section id="admin-panel-section" style="display:none;">
+      <h2>Manage Products</h2>
+      <form id="product-form">
+        <input type="text" id="product-title" placeholder="Product Title" required />
+        <input type="number" id="product-price" placeholder="Price" required />
+        <input type="file" id="product-image" accept="image/*" required />
+        <input type="text" id="product-whatsapp" placeholder="WhatsApp Number" required />
+        <button type="submit">Add Product</button>
+      </form>
+      <div id="product-list-admin"></div>
+      <p style="margin-top:2rem;font-weight:bold;">To add products to carousels, use the Featured/Trending checkboxes below each product.</p>
+    </section>
+    <section id="admin-blog-section"></section>
+    <section id="admin-about-section"></section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Modern E-Commerce</p>
+  </footer>
+  <script src="firebase-app.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html> 
